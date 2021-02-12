@@ -1,4 +1,5 @@
 
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { Component } from '@angular/core';
 
 
@@ -8,48 +9,40 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  isAuth = false;
- 
-  lastUpdate: Promise<Date> = new Promise(
-    (resolve, reject) => {
-      const date = new Date();
-      setTimeout(
-        () => {
-          resolve(date);
-        }, 2000
-      );
-    }
-  );
 
-
-  appareils = [
+  posts = [
     {
-      name : "Machine à laver",
-      status : "éteint"
+      title : "le premier post",
+      content : "c'est le post 1 trop cool",
+      createAt: new Date(),
+      loveIt: 'off'
     },
     {
-      name : "Ordinateur",
-      status : "allumé"
+      title : "le deuxieme post",
+      content : "c'est le post 2 trop cool",
+      createAt: new Date(),
+      loveIt: 'on'
     },
     {
-      name : "Sèche linge",
-      status : "éteint"
+      title : "le troisieme post",
+      content : "c'est le post 3 trop cool",
+      createAt: new Date(),
+      loveIt: 'on'
+    },
+    {
+      title : "le quatrieme post",
+      content : "c'est le post 4 trop cool",
+      createAt: new Date(),
+      loveIt: 'off'
     }
   ];
+ 
+constructor(){
 
-  
+}
 
-  onAllumer(){
-    console.log("on allume tout !");
-  }
 
-  constructor(){
-    setTimeout(
-      ()=> {
-        this.isAuth = true;
-      },4000
-    );
-  }
 
 }
