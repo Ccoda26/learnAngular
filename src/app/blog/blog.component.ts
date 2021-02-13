@@ -11,7 +11,7 @@ export class BlogComponent implements OnInit {
   @Input() postTitle?: string;
   @Input() postContent?: string;
   @Input() postCreateAt?: Date;
-  @Input() postLoveIt?: string;
+  @Input() postLoveIt?: number;
 
   constructor() { }
 
@@ -19,10 +19,20 @@ export class BlogComponent implements OnInit {
   }
 
   LoveIt(){
-    console.log('LoveIt');
+    this.postLoveIt = 1; 
   }
 
   DontLoveIt(){
-    console.log("dont");
+  this.postLoveIt = 2;
+  }
+
+  getcolor(){
+    if(this.postLoveIt === 1){
+      return 'green';
+    }else if(this.postLoveIt === 2){
+      return 'red';
+    }else{
+      return 'white';
+    }
   }
 }

@@ -1,13 +1,13 @@
-<div [ngClass]="{'bloc':true,
-                 'LoveIt':  postLoveIt === 'on',
-                'DontLoveIt': postLoveIt === 'off'}">
+<div class="bloc" [ngStyle]="{ 'background-color' : getcolor() }">
+                 
     <div class="flex">
     <h2> {{postTitle | uppercase}}</h2>
     <span class="hour">{{postCreateAt | date: 'short'}}</span>
     </div>
-    <p> {{postContent}} {{postLoveIt}}</p>
+    <p> {{postContent}}</p>
 
-    <input  (click)="LoveIt()" [(ngModel)]="postLoveIt">
-    <input type="submit" (click)="DontLoveIt()" [(ngModel)]="postLoveIt">
+    <button type="submit" (click)="LoveIt()" >Love it</button>
+    <button type="submit" (click)="DontLoveIt()" >Dont love It</button>
     
 </div>
+

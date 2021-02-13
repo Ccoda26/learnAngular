@@ -15,27 +15,27 @@ export class AppComponent {
   posts = [
     {
       title : "le premier post",
-      content : "c'est le post 1 trop cool",
+      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt nisi assumenda tempore veritatis sequi doloremque illum expedita ipsa, voluptatum doloribus corrupti similique esse minima animi quae necessitatibus accusamus aperiam, quam eaque ullam laboriosam id, eum illo. Quibusdam aperiam doloremque enim consequuntur nisi. Earum at voluptates, reprehenderit recusandae minima consequuntur adipisci maxime autem debitis, in quia molestias deleniti voluptate quisquam doloribus nam libero, optio ipsa rem inventore aliquid? Natus molestias illum quasi consequatur, itaque cupiditate sint nam distinctio delectus pariatur atque corrupti iusto ad necessitatibus autem. Sequi modi fuga libero, consequuntur sit dolore, rem ipsa quis non odit enim voluptatem!",
       createAt: new Date(),
-      loveIt: 'off'
+      loveIt: 0
     },
     {
       title : "le deuxieme post",
-      content : "c'est le post 2 trop cool",
+      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt nisi assumenda tempore veritatis sequi doloremque illum expedita ipsa, voluptatum doloribus corrupti similique esse minima animi quae necessitatibus accusamus aperiam, quam eaque ullam laboriosam id, eum illo. Quibusdam aperiam doloremque enim consequuntur nisi. Earum at voluptates, reprehenderit recusandae minima consequuntur adipisci maxime autem debitis, in quia molestias deleniti voluptate quisquam doloribus nam libero, optio ipsa rem inventore aliquid? Natus molestias illum quasi consequatur, itaque cupiditate sint nam distinctio delectus pariatur atque corrupti iusto ad necessitatibus autem. Sequi modi fuga libero, consequuntur sit dolore, rem ipsa quis non odit enim voluptatem!",
       createAt: new Date(),
-      loveIt: 'on'
+      loveIt: 0
     },
     {
       title : "le troisieme post",
-      content : "c'est le post 3 trop cool",
+      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt nisi assumenda tempore veritatis sequi doloremque illum expedita ipsa, voluptatum doloribus corrupti similique esse minima animi quae necessitatibus accusamus aperiam, quam eaque ullam laboriosam id, eum illo. Quibusdam aperiam doloremque enim consequuntur nisi. Earum at voluptates, reprehenderit recusandae minima consequuntur adipisci maxime autem debitis, in quia molestias deleniti voluptate quisquam doloribus nam libero, optio ipsa rem inventore aliquid? Natus molestias illum quasi consequatur, itaque cupiditate sint nam distinctio delectus pariatur atque corrupti iusto ad necessitatibus autem. Sequi modi fuga libero, consequuntur sit dolore, rem ipsa quis non odit enim voluptatem!",
       createAt: new Date(),
-      loveIt: 'on'
+      loveIt: 0
     },
     {
       title : "le quatrieme post",
-      content : "c'est le post 4 trop cool",
+      content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt nisi assumenda tempore veritatis sequi doloremque illum expedita ipsa, voluptatum doloribus corrupti similique esse minima animi quae necessitatibus accusamus aperiam, quam eaque ullam laboriosam id, eum illo. Quibusdam aperiam doloremque enim consequuntur nisi. Earum at voluptates, reprehenderit recusandae minima consequuntur adipisci maxime autem debitis, in quia molestias deleniti voluptate quisquam doloribus nam libero, optio ipsa rem inventore aliquid? Natus molestias illum quasi consequatur, itaque cupiditate sint nam distinctio delectus pariatur atque corrupti iusto ad necessitatibus autem. Sequi modi fuga libero, consequuntur sit dolore, rem ipsa quis non odit enim voluptatem!",
       createAt: new Date(),
-      loveIt: 'off'
+      loveIt: 0
     }
   ];
  
