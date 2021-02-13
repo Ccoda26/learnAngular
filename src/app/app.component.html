@@ -12,12 +12,16 @@
     <h1>Mini Blog</h1>
   </header>
   <main>
+    <div class="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
+        <li routerLinkActive="active"><a routerLink="blog">Blog</a></li>
+      </ul>
+    </div>
+    <router-outlet></router-outlet>
+    <app-blog-view>
 
-    <app-blog  *ngFor = "let post of posts" 
-            [postTitle]="post.title"
-            [postContent]="post.content"
-            [postCreateAt]="post.createAt"
-            [postLoveIt]="post.loveIt"></app-blog>
+    </app-blog-view>
             
 
     

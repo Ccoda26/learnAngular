@@ -1,0 +1,10 @@
+
+
+
+<app-blog  *ngFor = "let post of Posts" 
+            [postTitle]="post.title"
+            [postContent]="post.content"
+            [postCreateAt]="post.createAt"
+            [postLoveIt]="post.loveIt"
+            [postId] = post.id></app-blog>
+

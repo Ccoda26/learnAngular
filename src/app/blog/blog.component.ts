@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  
+  @Input() postId?: number;
   @Input() postTitle?: string;
   @Input() postContent?: string;
   @Input() postCreateAt?: Date;

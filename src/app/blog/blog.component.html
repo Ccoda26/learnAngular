@@ -1,7 +1,7 @@
-<div class="bloc" [ngStyle]="{ 'background-color' : getcolor() }">
+<section class="bloc" [ngStyle]="{ 'background-color' : getcolor() }">
                  
     <div class="flex">
-    <h2> {{postTitle | uppercase}}</h2>
+    <h2><a routerLink="blog/:id"> {{postTitle | uppercase}}</a></h2>
     <span class="hour">{{postCreateAt | date: 'short'}}</span>
     </div>
     <p> {{postContent}}</p>
@@ -9,5 +9,5 @@
     <button type="submit" (click)="LoveIt()" >Love it</button>
     <button type="submit" (click)="DontLoveIt()" >Dont love It</button>
     
-</div>
+</section>
 
