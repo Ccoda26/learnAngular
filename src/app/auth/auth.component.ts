@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import {AuthService} from '../service/auth.service'
 
 @Component({
@@ -17,12 +18,13 @@ export class AuthComponent implements OnInit {
     this.authStatus = this.authService.isAuth;
   }
 
-  onSignIn(){
+  onSignIn()  {
     this.authService.signIn().then(
       () => {
         console.log('Sign in succesful !!');
         this.authStatus = this.authService.isAuth;
         this.router.navigate(['/blog']);
+        return true;
       }
     )
   }

@@ -10,13 +10,17 @@ import { BlogViewComponent } from './blog-view/blog-view.component';
 import {RouterModule, Routes} from '@angular/router'
 import { AuthService } from './service/auth.service';
 import { SinglePostComponent } from './single-post/single-post.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
+import { AuthGard } from './service/auth-guard.service';
 
   
 const AppRoutes : Routes = [
-  { path: 'blog', component: BlogViewComponent},
-  { path: 'blog/:id', component:SinglePostComponent},
+  { path: 'blog', canActivate:[AuthGard], component: BlogViewComponent},
+  { path: 'blog/:id', canActivate:[AuthGard], component:SinglePostComponent},
   { path: 'auth', component:AuthComponent},
-  { path: ' ', component:BlogViewComponent}
+  { path: '', component:AppComponent},
+  {path: 'not-found', component:FourOhFourComponent },
+  {path: '**', redirectTo: 'not-found' },
 ];
 
 @NgModule({
@@ -25,16 +29,20 @@ const AppRoutes : Routes = [
     BlogComponent,
     AuthComponent,
     BlogViewComponent,
-    SinglePostComponent
+    SinglePostComponent,
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(AppRoutes)
+    
   ],
   providers: [
     BlogService,
-    AuthService
+    AuthService,
+    AuthGard,
+    
   ],
   bootstrap: [AppComponent]
 })
