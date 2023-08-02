@@ -2,14 +2,43 @@
 
 
 header,footer{
-    background-color: blueviolet;
-    height: 100px;
-    width: 100%;
+    background-color: #C7CEEA;
+    padding:50px;
+    width: 80%;
+    margin :0 auto;
+    border-radius: 10px;
 }
 
 h1{
     text-align: center;
 }
 
+h2 a {
+    color: #000;
+    text-decoration: none;
+    font-size:35px
+}
 
 
+.nav.navbar-nav{
+    display: flex;
+    justify-content:space-around;
+    width:80%;
+    margin:15px auto;
+}
+
+.nav.navbar-nav li{
+   list-style-type: none;
+   padding:10px;
+   border-radius :10px;
+   background-color: #C7CEEA;
+}
+
+.nav.navbar-nav li:hover{
+    background-color: #E3CCCE;
+ }
+
+.nav.navbar-nav li a{
+    text-decoration: none;
+    color:#000
+ }

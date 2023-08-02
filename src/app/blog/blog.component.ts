@@ -28,9 +28,9 @@ export class BlogComponent implements OnInit {
 
   getcolor(){
     if(this.postLoveIt === 1){
-      return 'green';
+      return '#A7C19C';
     }else if(this.postLoveIt === 2){
-      return 'red';
+      return '#E68585';
     }else{
       return 'white';
     }
